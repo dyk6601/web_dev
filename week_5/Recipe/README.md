@@ -7,12 +7,18 @@
 ## Ingredients
 
 -1 teaspoon kosher salt, plus more for the pasta water
+
 -1 pound dried spaghetti
+
 -1/3 cup extra-virgin olive oil
+
 -4 large cloves garlic, peeled and very thinly sliced
+
 -1/2 teaspoon crushed red pepper flakes
+
 -1/2 cup finely grated Parmesan cheese, plus more to pass 
 at the table
+
 -2 tablespoons finely chopped Italian parsley (optional)
 
 ## Directions
