@@ -1,0 +1,34 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center auto;
+  }
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(200, 78, 38)
+  }
+  
+  .container {
+    margin: 3rem auto;
+    display: grid;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  /* Sub
+  
