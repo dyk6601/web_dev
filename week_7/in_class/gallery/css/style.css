@@ -11,6 +11,10 @@
     color: #333;
   }
   
+  h1{
+    padding: 10%;
+    
+  }
   header {
     background-color: #333;
     color: #fff;
@@ -20,36 +24,42 @@
 
   p {
     font-family: Arial, Helvetica, sans-serif;
+    color:rgb(248, 242, 241);
+    padding: 10px;
     text-align: center;
-    color:rgb(200, 78, 38)
   }
   
   .container {
-    width: 1px;
-    margin: 3rem auto;
+    background-color: #e3d2be;
     display: grid;
-    gap: 1rem;
-    padding: 0 1rem;
+    gap:20px;
+    padding-left:20px;
+    padding-right: 20px;
   }
+  
   .polaroid{
-    width:300px;
-    border:#333;
-    background-color: black;
-  }
-  .hover2D {
-    transition: transform 0.1s ease-in-out;
-  }
-  
-  .hover2D:hover{
-    transform:rotate(20deg);
-  }
-  .scale{
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .scale:hover{
-    transform:scale(2,1)
+    background-color: rgb(183, 134, 134);
   }
 
+  .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  .hover2D{
+    transition: transform 0.3s ease-in-out
+  }
+
+  .hover2D:hover{
+    transform: rotate(20deg);
+  }
+
+  .scale{
+    transition:transform 0.5s ease-in;
+  }
+  .scale:hover{
+    transform: scale(1,2);
+  }
   /* Sub
   
