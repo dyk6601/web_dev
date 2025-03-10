@@ -1,0 +1,42 @@
+/* General styles - put these straight into your stylesheet */
+
+body {
+    margin: 0;
+  }
+  
+  html {
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+    font-size: 20px;
+    background-color: #ccc;
+  }  
+
+.card{
+    width: 600px;
+    height: 400px;
+    background-color: red;
+    border: solid 1px;
+    border-radius:10px;
+}
+
+
+/* Give the header a background gradient that goes from darker to lighter, plus rounded corners that fit in with the rounded corners set on the main card container.
+*/
+
+.card header{
+    background-color: rgb(228, 118, 118);
+    border:solid 1px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.card article img{
+    float:right
+}
+.card footer{
+    clear:both;
+    background-color: rgb(228, 118, 118);
+    border:solid 1px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
