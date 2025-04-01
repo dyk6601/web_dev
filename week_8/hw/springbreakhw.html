@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Web Development Techniques</h1>
+        <nav>
+            <ul>
+                <li><a href="#positioning">Positioning</a></li>
+                <li><a href="#transformations">Transformations</a></li>
+                <li><a href="#flexbox">Flexbox</a></li>
+                <li><a href="#javascript">JavaScript Interactivity</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="positioning">
+        <h2>Positioning</h2>
+        <p>Hover over each element to see its description.</p>
+        
+        <div class="position-container">
+            <div class="demo-box static" title="Static positioning is the default">Static Positioning</div>
+            <div class="demo-box relative" title="Positioned relative to its normal position">Relative Positioning</div>
+            <div class="demo-box absolute" title="Positioned relative to nearest positioned ancestor">Absolute Positioning</div>
+            <div class="demo-box sticky" title="Positioned based on scroll position">Sticky Positioning</div>
+        </div>
+        
+        <div class="demo-box fixed" title="Positioned relative to viewport">Fixed Positioning</div>
+    </section>
+
+    <section id="transformations">
+        <h2>Transformations and Transitions</h2>
+        <p>Hover over each box to see the transformation effect.</p>
+        
+        <div class="transform-container">
+            <div class="transform scale">Scale Effect</div>
+            <div class="transform rotate">Rotate Effect</div>
+            <div class="transform skew">Skew Effect</div>
+            <div class="transform translate">Translate Effect</div>
+        </div>
+    </section>
+
+    <section id="flexbox">
+        <h2>Flexbox Demo</h2>
+        <p>A simple demonstration of flexbox layout.</p>
+        
+        <div class="flex-container">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+    </section>
+
+    <section id="javascript">
+        <h2>JavaScript Show/Hide Demo</h2>
+        <p>Click the button to toggle content visibility.</p>
+        
+        <button id="toggle-btn">Show Content</button>
+        <div id="hidden-content" class="hidden content-box">
+            <p>This is some hidden content that can be toggled using JavaScript.</p>
+            <p>The button text also changes based on the current state.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

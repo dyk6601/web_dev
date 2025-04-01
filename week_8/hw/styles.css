@@ -1,0 +1,187 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+/* Positioning examples */
+.position-container {
+    position: relative;
+    height: 200px;
+    border: 1px dashed #999;
+    margin-bottom: 20px;
+}
+
+.demo-box {
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+    background: #f4f4f4;
+    border: 1px solid #999;
+}
+
+.static {
+    position: static;
+    background: #f4f4f4;
+}
+
+.relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background: #e2e2e2;
+}
+
+.absolute {
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    background: #ccc;
+    z-index: 1;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #bbb;
+    z-index: 100;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background: #aaa;
+    z-index: 10;
+}
+
+/* Transformation examples */
+.transform-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.transform {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background: #f4f4f4;
+    border: 1px solid #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.scale:hover {
+    transform: scale(1.2);
+}
+
+.rotate:hover {
+    transform: rotate(45deg);
+}
+
+.skew:hover {
+    transform: skew(15deg);
+}
+
+.translate:hover {
+    transform: translate(10px, 10px);
+}
+
+/* Flexbox examples */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    background: #f4f4f4;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    background: #ddd;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    border: 1px solid #999;
+}
+
+/* JavaScript section */
+#javascript {
+    padding-bottom: 40px;
+}
+
+button {
+    padding: 10px 15px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background: #555;
+}
+
+.hidden {
+    display: none;
+}
+
+.content-box {
+    background: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    
+    .transform-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
