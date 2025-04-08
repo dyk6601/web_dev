@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Rock Paper Scissor game</title>
+    </head>
+    <body>
+        <h1>Rock Paper Scissor</h1>
+        <p id="log">Choose your Weapon of Choice</p>
+        <div class="Buttons">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissor">Scissor</button>
+        </div>
+        <div class = "reset">
+            <button id = "reset">reset</button>
+        </div>
+        <script>
+            let rand =  Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+            let resetButton;
+
+            function playerChoice(choice) {
+                document.getElementById("log").textContent = "You chose " + choice;
+            }
+            function isTied(a, rand){
+                return a == rand;
+            }
+            function youLose(choice){
+                document.getElementById("log").textContent = "You lose with " + choice;
+            }
+            function youWin(choice){
+                document.getElementById("log").textContent = "You win with " + choice;
+
+            }
+            document.getElementById("rock").addEventListener("click", function() {
+                let rock = 1;
+                if (isTied(rock,rand)) {
+                    document.getElementById("log").textContent = `You tied with the computer`;
+                }
+                else if (rand == 2) {
+                    youLose("rock")
+                }
+                else if (rand == 3){
+                    youWin("rock")
+                }
+                else{
+                    playerChoice("Rock");
+                }
+            });
+
+            document.getElementById("paper").addEventListener("click", function() {
+                let paper = 2;
+
+                if (isTied(paper,rand)) {
+                    document.getElementById("log").textContent = `You tied with the computer`;
+                }
+                else if(rand == 3){
+                    youLose("paper");
+                }
+                else if (rand ==1){
+                    youLose("paper")
+                }
+                else{
+                    playerChoice("Paper");
+                }
+            });
+
+            document.getElementById("scissor").addEventListener("click", function() {
+                let scissor = 3;
+                if (isTied(scissor,rand)) {
+                    document.getElementById("log").textContent = `You tied with the computer`;
+                }
+                else if(rand == 1){
+                    youLose("scissor");
+                }
+                else if (rand ==1){
+                    youLose("paper")
+                }
+                else{
+                playerChoice("Scissor");
+                }
+            });
+            
+            function resetGame() {
+        const resultParas = document.querySelectorAll(".resultParas p");
+        lastResult.style.backgroundColor = "white";
+        rand =  Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+      }
+
+        </script>
+    </body>
+</html>
